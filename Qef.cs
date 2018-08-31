@@ -372,7 +372,7 @@ namespace Qef
             // the upper right triagonal
             Mat3 vtav = a;
 
-                // assuming V is identity: you can also pass a matrix the rotations
+            // assuming V is identity: you can also pass a matrix the rotations
             // should be applied to
             // U is not computed
             for (int i = 0; i < SVD_NUM_SWEEPS; ++i)
@@ -432,6 +432,7 @@ namespace Qef
         public static void MulAtaSym(out Mat3 o, Mat3 a)
         {
             o = new Mat3(0.0f);
+
             o[0, 0] = a[0, 0] * a[0, 0] + a[1, 0] * a[1, 0] + a[2, 0] * a[2, 0];
             o[0, 1] = a[0, 0] * a[0, 1] + a[1, 0] * a[1, 1] + a[2, 0] * a[2, 1];
             o[0, 2] = a[0, 0] * a[0, 2] + a[1, 0] * a[1, 2] + a[2, 0] * a[2, 2];
