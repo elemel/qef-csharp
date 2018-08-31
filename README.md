@@ -1,2 +1,2 @@
 # qef-csharp
-C# port of ngildea/qef
+C# port of nickgildea/qef
