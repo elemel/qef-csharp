@@ -119,7 +119,7 @@ namespace Qef
 
         public static Vec4 operator +(Vec4 a, Vec4 b)
         {
-            return new Vec4(a.x + b.x, a.y + b.y, a.x + b.z, a.w + b.w);
+            return new Vec4(a.x + b.x, a.y + b.y, a.z + b.z, a.w + b.w);
         }
     }
 
